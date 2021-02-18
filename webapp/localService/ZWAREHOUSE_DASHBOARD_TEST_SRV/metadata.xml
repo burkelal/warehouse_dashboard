@@ -1,0 +1,28 @@
+<edmx:Edmx xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx"
+	xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData" Version="1.0">
+	<edmx:DataServices m:DataServiceVersion="2.0">
+		<Schema xmlns="http://schemas.microsoft.com/ado/2008/09/edm" Namespace="ZWAREHOUSE_DASHBOARD_TEST_SRV" xml:lang="en" sap:schema-version="1">
+			<EntityType Name="DeliveryData" sap:content-version="1">
+				<Key><PropertyRef Name="VBELN"/></Key><Property Name="VBELN" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Delivery" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="SHIPTO" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Ship-to Party"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="NAME1" Type="Edm.String" Nullable="false" MaxLength="35" sap:unicode="false" sap:label="Customer Name" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="VBELV" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="Sales Order" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="ROUTE" Type="Edm.String" Nullable="false" MaxLength="6" sap:unicode="false" sap:label="Route" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="PCKD" Type="Edm.Int16" Nullable="false" sap:unicode="false" sap:label="Picked" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/><Property Name="OPEN" Type="Edm.Int16" Nullable="false" sap:unicode="false" sap:label="Open" sap:creatable="false" sap:updatable="false"
+					sap:sortable="false" sap:filterable="false"/><Property Name="COMP" Type="Edm.Int16" Nullable="false" sap:unicode="false" sap:label="Completion Percentage" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="STATUS" Type="Edm.String" Nullable="false" MaxLength="12" sap:unicode="false" sap:label="Status" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="SHIP_PT" Type="Edm.String" Nullable="false" MaxLength="11" sap:unicode="false" sap:label="Shipping Point"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/></EntityType>
+			<EntityType Name="HeaderData" sap:content-version="1">
+				<Key><PropertyRef Name="ITEMS2PICK"/></Key><Property Name="ITEMS2PICK" Type="Edm.Int16" Nullable="false" sap:unicode="false" sap:label="Items to Pick" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="ITEMSPICKED" Type="Edm.Int16" Nullable="false" sap:unicode="false" sap:label="Items Picked" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="PICKCOMP" Type="Edm.Int16" Nullable="false" sap:unicode="false" sap:label="Pick Completion %" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="ITEMS4PUT" Type="Edm.Int16" Nullable="false" sap:unicode="false" sap:label="Items for Putaway" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="ITEMSPUT" Type="Edm.Int16" Nullable="false" sap:unicode="false" sap:label="Items Putway" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="PUTCOMP" Type="Edm.Int16" Nullable="false" sap:unicode="false" sap:label="Putaway Completion %" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/></EntityType>
+			<EntityContainer Name="ZWAREHOUSE_DASHBOARD_TEST_SRV_Entities" m:IsDefaultEntityContainer="true" sap:supported-formats="atom json xlsx"><EntitySet Name="DeliveryDataSet" EntityType="ZWAREHOUSE_DASHBOARD_TEST_SRV.DeliveryData" sap:creatable="false" sap:updatable="false"
+				sap:deletable="false" sap:pageable="false" sap:content-version="1"/><EntitySet Name="HeaderDataCollection" EntityType="ZWAREHOUSE_DASHBOARD_TEST_SRV.HeaderData" sap:content-version="1"/></EntityContainer><atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="self" href="./sap/ZWAREHOUSE_DASHBOARD_TEST_SRV/$metadata"/><atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="latest-version" href="./sap/ZWAREHOUSE_DASHBOARD_TEST_SRV/$metadata"/></Schema>
+	</edmx:DataServices>
+</edmx:Edmx>

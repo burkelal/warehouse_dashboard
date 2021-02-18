@@ -16,6 +16,13 @@
 					"odataVersion": "2.0",
 					"localUri": "localService/metadata.xml"
 				}
+			},
+			"ZWAREHOUSE_DASHBOARD_TEST_SRV": {
+				"uri": "/sap/opu/odata/sap/ZWAREHOUSE_DASHBOARD_TEST_SRV/",
+				"type": "OData",
+				"settings": {
+					"localUri": "localService/ZWAREHOUSE_DASHBOARD_TEST_SRV/metadata.xml"
+				}
 			}
 		},
 		"title": "{{appTitle}}",
@@ -23,8 +30,8 @@
 		"ach": "ach",
 		"resources": "resources.json",
 		"sourceTemplate": {
-			"id": "ui5template.basicSAPUI5ApplicationProject",
-			"version": "1.32.0"
+			"id": "servicecatalog.connectivityComponentForManifest",
+			"version": "0.0.0"
 		}
 	},
 	"sap.ui": {
@@ -68,18 +75,14 @@
 				"uri": "i18n/i18n.properties"
 			},
 			"": {
-				"dataSource": "local",
 				"type": "sap.ui.model.odata.v2.ODataModel",
 				"settings": {
-					"loadMetadataAsync": false,
-					"json": true,
-					"bJSON": true,
-					"defaultBindingMode": "TwoWay",
-					"defaultCountMode": "Inline",
-					"useBatch": true,
-					"refreshAfterChange": false,
-					"disableHeadRequestForToken": true
-				}
+					"defaultOperationMode": "Server",
+					"defaultBindingMode": "OneWay",
+					"defaultCountMode": "Request"
+				},
+				"dataSource": "ZWAREHOUSE_DASHBOARD_TEST_SRV",
+				"preload": true
 			}
 		},
 		"resources": {
@@ -108,19 +111,22 @@
 					"transition": "slide"
 				}
 			},
-			"routes": [{
-				"pattern": "Page1/:context:",
-				"name": "Page1",
-				"target": [
-					"Page1"
-				]
-			}, {
-				"pattern": "",
-				"name": "default",
-				"target": [
-					"Page1"
-				]
-			}]
+			"routes": [
+				{
+					"pattern": "Page1/:context:",
+					"name": "Page1",
+					"target": [
+						"Page1"
+					]
+				},
+				{
+					"pattern": "",
+					"name": "default",
+					"target": [
+						"Page1"
+					]
+				}
+			]
 		}
 	}
 }
