@@ -1,0 +1,122 @@
+[{
+	"ID": "8000044894",
+	"SHIPTO": "P004",
+	"SHIPTO_NAME": "BSE - Dickinson",
+	"ORDER": "4700001245",
+	"ROUTE": "FRT1",
+	"NEED_PICK": 4,
+	"OPEN_PICK": 3,
+	"COMPLETION": 25,
+	"STATUS": "STARTED",
+	"SHIPPING_PT": "001C"
+}, {
+	"ID": "8000044893",
+	"SHIPTO": "P004",
+	"SHIPTO_NAME": "BSE - Dickinson",
+	"ORDER": "4700001245",
+	"ROUTE": "FRT1",
+	"NEED_PICK": 2,
+	"OPEN_PICK": 1,
+	"COMPLETION": 50,
+	"STATUS": "STARTED",
+	"SHIPPING_PT": "001C"
+}, {
+	"ID": "8000044840",
+	"SHIPTO": "121",
+	"SHIPTO_NAME": "Cargill Inc-Dickinson",
+	"ORDER": "30008679",
+	"ROUTE": "BSTMI",
+	"NEED_PICK": 1,
+	"OPEN_PICK": 0,
+	"COMPLETION": 100,
+	"STATUS": "COMPLETE",
+	"SHIPPING_PT": "001C"
+}, {
+	"ID": "8000044839",
+	"SHIPTO": "121",
+	"SHIPTO_NAME": "Cargill Inc-Dickinson",
+	"ORDER": "30008679",
+	"ROUTE": "BSTMI",
+	"NEED_PICK": 1,
+	"OPEN_PICK": 1,
+	"COMPLETION": 100,
+	"STATUS": "NOT STARTED",
+	"SHIPPING_PT": "001C"
+}, {
+	"ID": "8000044838",
+	"SHIPTO": "121",
+	"SHIPTO_NAME": "Cargill Inc-Dickinson",
+	"ORDER": "30008679",
+	"ROUTE": "BSTMI",
+	"NEED_PICK": 1,
+	"OPEN_PICK": 1,
+	"COMPLETION": 100,
+	"STATUS": "NOT STARTED",
+	"SHIPPING_PT": "001C"
+}, {
+	"ID": "8000044837",
+	"SHIPTO": "121",
+	"SHIPTO_NAME": "Cargill Inc-Dickinson",
+	"ORDER": "30008679",
+	"ROUTE": "BSTMI",
+	"NEED_PICK": 3,
+	"OPEN_PICK": 1,
+	"COMPLETION": 33,
+	"STATUS": "STARTED",
+	"SHIPPING_PT": "001C"
+}, {
+	"ID": "8000044836",
+	"SHIPTO": "121",
+	"SHIPTO_NAME": "Cargill Inc-Dickinson",
+	"ORDER": "30008679",
+	"ROUTE": "BSTMI",
+	"NEED_PICK": 1,
+	"OPEN_PICK": 0,
+	"COMPLETION": 100,
+	"STATUS": "COMPLETE",
+	"SHIPPING_PT": "001C"
+}, {
+	"ID": "8000044835",
+	"SHIPTO": "121",
+	"SHIPTO_NAME": "Cargill Inc-Dickinson",
+	"ORDER": "30008679",
+	"ROUTE": "BSTMI",
+	"NEED_PICK": 2,
+	"OPEN_PICK": 1,
+	"COMPLETION": 50,
+	"STATUS": "STARTED",
+	"SHIPPING_PT": "001C"
+}, {
+	"ID": "8000044832",
+	"SHIPTO": "121",
+	"SHIPTO_NAME": "Cargill Inc-Dickinson",
+	"ORDER": "30008679",
+	"ROUTE": "BSTMI",
+	"NEED_PICK": 1,
+	"OPEN_PICK": 0,
+	"COMPLETION": 100,
+	"STATUS": "COMPLETE",
+	"SHIPPING_PT": "001C"
+}, {
+	"ID": "8000044831",
+	"SHIPTO": "121",
+	"SHIPTO_NAME": "Cargill Inc-Dickinson",
+	"ORDER": "30008679",
+	"ROUTE": "BSTMI",
+	"NEED_PICK": 4,
+	"OPEN_PICK": 1,
+	"COMPLETION": 75,
+	"STATUS": "STARTED",
+	"SHIPPING_PT": "001C"
+}, {
+	"ID": "8000044830",
+	"SHIPTO": "121",
+	"SHIPTO_NAME": "Cargill Inc-Dickinson",
+	"ORDER": "30008679",
+	"ROUTE": "BSTMI",
+	"NEED_PICK": 1,
+	"OPEN_PICK": 0,
+	"COMPLETION": 100,
+	"STATUS": "COMPLETE",
+	"SHIPPING_PT": "001C"
+}]

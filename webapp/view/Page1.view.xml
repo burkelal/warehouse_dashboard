@@ -1,0 +1,161 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" controllerName="com.sap.build.ibm.warehouseDashboard.controller.Page1" xmlns="sap.m"
+	xmlns:chart="sap.chart" xmlns:data="sap.chart.data">
+	<Page showHeader="true" title="Warehouse Dashboard" showFooter="true" showNavButton="false">
+		<content>
+			<HBox alignItems="Stretch" direction="Row" fitContainer="false" width="1280px" height="auto" justifyContent="Start" renderType="Div"
+				visible="true" displayInline="false">
+				<items>
+					<chart:Chart id="sap_Worklist_Page_0-content-sap_chart_PieChart-1613612270868" width="640px" height="215px" visibleDimensions="__id"
+						visibleMeasures="mea0" vizProperties="{staticDataModel>/sap_Worklist_Page_0-content-sap_chart_PieChart-1613612270868/vizProperties}"
+						chartType="pie" selectionMode="Single" uiConfig="{}">
+						<chart:dimensions>
+							<data:Dimension name="__id" label="Country" role="category" textProperty="dim0"/>
+						</chart:dimensions>
+						<chart:measures>
+							<data:Measure name="mea0" label="Profit" role="axis2"/>
+						</chart:measures>
+					</chart:Chart>
+					<chart:Chart id="sap_Worklist_Page_0-content-sap_m_HBox-1613612452380-items-sap_chart_PieChart-1613612475525" width="640px" height="215px"
+						visibleDimensions="__id" visibleMeasures="mea0"
+						vizProperties="{staticDataModel>/sap_Worklist_Page_0-content-sap_m_HBox-1613612452380-items-sap_chart_PieChart-1613612475525/vizProperties}"
+						chartType="pie" selectionMode="Single" uiConfig="{}">
+						<chart:dimensions>
+							<data:Dimension name="__id" label="Country" role="category" textProperty="dim0"/>
+						</chart:dimensions>
+						<chart:measures>
+							<data:Measure name="mea0" label="Profit" role="axis2"/>
+						</chart:measures>
+					</chart:Chart>
+					<Text text="Item 3" width="65px" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+					<Text text="Item 4" width="75px" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+				</items>
+				<layoutData/>
+			</HBox>
+			<IconTabBar expandable="false" expanded="true" applyContentPadding="false" backgroundDesign="Solid" upperCase="true" visible="true"
+				selectedKey="Ok">
+				<items>
+					<IconTabFilter icon="" iconColor="Default" text="Today's Picking" count="" design="Vertical" showAll="false" textDirection="Inherit"
+						enabled="true" visible="true" iconDensityAware="false">
+						<content/>
+					</IconTabFilter>
+				</items>
+				<content/>
+			</IconTabBar>
+			<Table width="auto" noDataText="No data" mode="None" showSeparators="All" growing="true" growingThreshold="20" growingScrollToLoad="true"
+				class="sapUiResponsiveMargin" items="{path:'/DeliveriesSet', templateShareable:true}">
+				<infoToolbar>
+					<Toolbar width="100%" height="auto" design="Auto" visible="false" enabled="true">
+						<content>
+							<Label text="Label" design="Standard" width="100%" required="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+						</content>
+					</Toolbar>
+				</infoToolbar>
+				<headerToolbar>
+					<OverflowToolbar width="auto" height="auto" design="Transparent" visible="true" enabled="true">
+						<content>
+							<Title text="Deliveries (11)" titleStyle="Auto" width="auto" textAlign="Begin" visible="true" wrapping="false"/>
+							<ToolbarSpacer width=""/>
+							<OverflowToolbarButton text="Sort" type="Transparent" icon="sap-icon://sort" iconFirst="true" width="auto" enabled="true" visible="true"
+								iconDensityAware="false"/>
+							<OverflowToolbarButton text="Filter" type="Transparent" icon="sap-icon://filter" iconFirst="true" width="auto" enabled="true" visible="true"
+								iconDensityAware="false"/>
+							<OverflowToolbarButton text="Group" type="Transparent" icon="sap-icon://group-2" iconFirst="true" width="auto" enabled="true" visible="true"
+								iconDensityAware="false"/>
+							<OverflowToolbarButton text="Settings" type="Transparent" icon="sap-icon://action-settings" iconFirst="true" width="auto" enabled="true"
+								visible="true" iconDensityAware="false"/>
+						</content>
+					</OverflowToolbar>
+				</headerToolbar>
+				<columns>
+					<Column width="100px" hAlign="Left" vAlign="Top" minScreenWidth="Phone" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+						<header>
+							<Text text="Delivery" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+						</header>
+						<footer/>
+					</Column>
+					<Column width="70px" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="WithoutHeader"
+						mergeDuplicates="false">
+						<header>
+							<Text text="Ship-To" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+						</header>
+						<footer/>
+					</Column>
+					<Column width="160px" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Block" mergeDuplicates="false">
+						<header>
+							<Text text="Ship-To Name" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+						</header>
+						<footer/>
+					</Column>
+					<Column width="100px" hAlign="Left" vAlign="Top" minScreenWidth="Desktop" demandPopin="false" popinDisplay="Inline" mergeDuplicates="false">
+						<header>
+							<Text text="Sales Order" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+						</header>
+						<footer/>
+					</Column>
+					<Column width="60px" hAlign="Left" vAlign="Top" minScreenWidth="Desktop" demandPopin="false" popinDisplay="Inline" mergeDuplicates="false">
+						<header>
+							<Text text="Route" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+						</header>
+						<footer/>
+					</Column>
+					<Column width="70px" hAlign="Left" vAlign="Top" minScreenWidth="Phone" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+						<header>
+							<Text text="# PICK" width="auto" maxLines="2" wrapping="true" textAlign="Begin" textDirection="Inherit" visible="true"/>
+						</header>
+						<footer/>
+					</Column>
+					<Column width="70px" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+						<header>
+							<Text text="# OPEN" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+						</header>
+						<footer/>
+					</Column>
+					<Column width="120px" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+						<header>
+							<Text text="COMPLETION%" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+						</header>
+						<footer/>
+					</Column>
+					<Column width="120px" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+						<header>
+							<Text text="Status" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+						</header>
+						<footer/>
+					</Column>
+					<Column width="100px" hAlign="Left" vAlign="Top" minScreenWidth="Tablet" demandPopin="true" popinDisplay="Inline" mergeDuplicates="false">
+						<header>
+							<Text text="Shipping Point" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+						</header>
+						<footer/>
+					</Column>
+				</columns>
+				<items>
+					<ColumnListItem type="Navigation">
+						<cells>
+							<Link text="{ID}" textAlign="Begin" width="auto" target="_blank" wrapping="false" enabled="true" visible="true" emphasized="false"
+								subtle="false"/>
+							<Text text="{SHIPTO}" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+							<Text text="{SHIPTO_NAME}" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+							<Text text="{ORDER}" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+							<Text text="{ROUTE}" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+							<ObjectNumber number="{path: 'NEED_PICK', type: 'sap.ui.model.type.Float', formatOptions: { maxFractionDigits: 2 }}" unit=""
+								emphasized="true" state="None"/>
+							<Text text="{path: 'OPEN_PICK', type: 'sap.ui.model.type.Float', formatOptions: { maxFractionDigits: 2 }}" width="auto" maxLines="1"
+								wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+							<Text text="{path: 'COMPLETION', type: 'sap.ui.model.type.Float', formatOptions: { maxFractionDigits: 2 }}" width="auto" maxLines="1"
+								wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+							<ObjectStatus text="{STATUS}" state="Warning" visible="true"/>
+							<Text text="{SHIPPING_PT}" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+						</cells>
+					</ColumnListItem>
+				</items>
+			</Table>
+			<Title text="We want you to go home injury free every day — stay vigilant — and remember, no injury is worth the cost." titleStyle="H3"
+				width="1280.00000000px" textAlign="Center" visible="true" wrapping="false"/>
+		</content>
+		<footer/>
+		<headerContent/>
+		<subHeader/>
+		<customHeader/>
+	</Page>
+</mvc:View>
