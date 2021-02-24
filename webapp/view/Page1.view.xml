@@ -5,8 +5,8 @@
 			<HBox alignItems="Stretch" direction="Row" fitContainer="false" width="1280px" height="auto" justifyContent="Start" renderType="Div"
 				visible="true" displayInline="false">
 				<items>
-					<chart:Chart id="sap_Worklist_Page_0-content-sap_chart_PieChart-1613612270868" width="640px" height="215px" visibleDimensions="__id"
-						visibleMeasures="mea0" vizProperties="{staticDataModel>/sap_Worklist_Page_0-content-sap_chart_PieChart-1613612270868/vizProperties}"
+					<chart:Chart id="pickChart" width="640px" height="215px" visibleDimensions="__id"
+						visibleMeasures="mea0" vizProperties="{staticDataModel>/pickChart/vizProperties}"
 						chartType="pie" selectionMode="Single" uiConfig="{}">
 						<chart:dimensions>
 							<data:Dimension name="__id" label="Country" role="category" textProperty="dim0"/>
@@ -15,9 +15,9 @@
 							<data:Measure name="mea0" label="Profit" role="axis2"/>
 						</chart:measures>
 					</chart:Chart>
-					<chart:Chart id="sap_Worklist_Page_0-content-sap_m_HBox-1613612452380-items-sap_chart_PieChart-1613612475525" width="640px" height="215px"
+					<chart:Chart id="packChart" width="640px" height="215px"
 						visibleDimensions="__id" visibleMeasures="mea0"
-						vizProperties="{staticDataModel>/sap_Worklist_Page_0-content-sap_m_HBox-1613612452380-items-sap_chart_PieChart-1613612475525/vizProperties}"
+						vizProperties="{staticDataModel>/packChart/vizProperties}"
 						chartType="pie" selectionMode="Single" uiConfig="{}">
 						<chart:dimensions>
 							<data:Dimension name="__id" label="Country" role="category" textProperty="dim0"/>

@@ -111,9 +111,9 @@ sap.ui.define(["sap/ui/core/mvc/Controller",
 			oView.setModel(oModel, "staticDataModel");
 			self.oBindingParameters = {};
 
-			oData["sap_Worklist_Page_0-content-sap_chart_PieChart-1613612270868"] = {};
+			oData["pickChart"] = {};
 
-			oData["sap_Worklist_Page_0-content-sap_chart_PieChart-1613612270868"]["data"] = [{
+			oData["pickChart"]["data"] = [{
 				"dim0": "Items left to Pick",
 				"mea0": "296",
 				"__id": 0
@@ -127,13 +127,13 @@ sap.ui.define(["sap/ui/core/mvc/Controller",
 				"__id": 2
 			}];
 
-			self.oBindingParameters['sap_Worklist_Page_0-content-sap_chart_PieChart-1613612270868'] = {
-				"path": "/sap_Worklist_Page_0-content-sap_chart_PieChart-1613612270868/data",
+			self.oBindingParameters['pickChart'] = {
+				"path": "/pickChart/data",
 				"model": "staticDataModel",
 				"parameters": {}
 			};
 
-			oData["sap_Worklist_Page_0-content-sap_chart_PieChart-1613612270868"]["vizProperties"] = {
+			oData["pickChart"]["vizProperties"] = {
 				"plotArea": {
 					"dataLabel": {
 						"visible": true,
@@ -142,9 +142,9 @@ sap.ui.define(["sap/ui/core/mvc/Controller",
 				}
 			};
 
-			oData["sap_Worklist_Page_0-content-sap_m_HBox-1613612452380-items-sap_chart_PieChart-1613612475525"] = {};
+			oData["packChart"] = {};
 
-			oData["sap_Worklist_Page_0-content-sap_m_HBox-1613612452380-items-sap_chart_PieChart-1613612475525"]["data"] = [{
+			oData["packChart"]["data"] = [{
 				"dim0": "Items for Putaway",
 				"mea0": "296",
 				"__id": 0
@@ -158,13 +158,13 @@ sap.ui.define(["sap/ui/core/mvc/Controller",
 				"__id": 2
 			}];
 
-			self.oBindingParameters['sap_Worklist_Page_0-content-sap_m_HBox-1613612452380-items-sap_chart_PieChart-1613612475525'] = {
-				"path": "/sap_Worklist_Page_0-content-sap_m_HBox-1613612452380-items-sap_chart_PieChart-1613612475525/data",
+			self.oBindingParameters['packChart'] = {
+				"path": "/packChart/data",
 				"model": "staticDataModel",
 				"parameters": {}
 			};
 
-			oData["sap_Worklist_Page_0-content-sap_m_HBox-1613612452380-items-sap_chart_PieChart-1613612475525"]["vizProperties"] = {
+			oData["packChart"]["vizProperties"] = {
 				"plotArea": {
 					"dataLabel": {
 						"visible": true,
@@ -186,12 +186,12 @@ sap.ui.define(["sap/ui/core/mvc/Controller",
 				return oValueToFormat;
 			}
 
-			var aDimensions = oView.byId("sap_Worklist_Page_0-content-sap_chart_PieChart-1613612270868").getDimensions();
+			var aDimensions = oView.byId("pickChart").getDimensions();
 			aDimensions.forEach(function (oDimension) {
 				oDimension.setTextFormatter(dateDimensionFormatter);
 			});
 
-			var aDimensions = oView.byId("sap_Worklist_Page_0-content-sap_m_HBox-1613612452380-items-sap_chart_PieChart-1613612475525").getDimensions();
+			var aDimensions = oView.byId("packChart").getDimensions();
 			aDimensions.forEach(function (oDimension) {
 				oDimension.setTextFormatter(dateDimensionFormatter);
 			});
@@ -226,11 +226,11 @@ sap.ui.define(["sap/ui/core/mvc/Controller",
 				oBindingParameters = this.oBindingParameters,
 				oView = this.getView();
 
-			oChart = oView.byId("sap_Worklist_Page_0-content-sap_chart_PieChart-1613612270868");
-			oChart.bindData(oBindingParameters['sap_Worklist_Page_0-content-sap_chart_PieChart-1613612270868']);
+			oChart = oView.byId("pickChart");
+			oChart.bindData(oBindingParameters['pickChart']);
 
-			oChart = oView.byId("sap_Worklist_Page_0-content-sap_m_HBox-1613612452380-items-sap_chart_PieChart-1613612475525");
-			oChart.bindData(oBindingParameters['sap_Worklist_Page_0-content-sap_m_HBox-1613612452380-items-sap_chart_PieChart-1613612475525']);
+			oChart = oView.byId("packChart");
+			oChart.bindData(oBindingParameters['packChart']);
 
 		}
 	});
