@@ -42,7 +42,7 @@
 				<content/>
 			</IconTabBar>
 			<Table width="auto" noDataText="No data" mode="None" showSeparators="All" growing="true" growingThreshold="20" growingScrollToLoad="true"
-				class="sapUiResponsiveMargin" items="{path:'/DeliveriesSet', templateShareable:true}">
+				class="sapUiResponsiveMargin" items="{path:'/DeliveryDataSet', templateShareable:true}">
 				<infoToolbar>
 					<Toolbar width="100%" height="auto" design="Auto" visible="false" enabled="true">
 						<content>
@@ -132,20 +132,16 @@
 				<items>
 					<ColumnListItem type="Navigation">
 						<cells>
-							<Link text="{ID}" textAlign="Begin" width="auto" target="_blank" wrapping="false" enabled="true" visible="true" emphasized="false"
-								subtle="false"/>
+							<Link text="{VBELN}" textAlign="Begin" width="auto" target="_blank" wrapping="false" enabled="true" visible="true" emphasized="false" subtle="false"/>
 							<Text text="{SHIPTO}" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
-							<Text text="{SHIPTO_NAME}" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
-							<Text text="{ORDER}" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+							<Text text="{NAME1}" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+							<Text text="{VBELV}" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
 							<Text text="{ROUTE}" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
-							<ObjectNumber number="{path: 'NEED_PICK', type: 'sap.ui.model.type.Float', formatOptions: { maxFractionDigits: 2 }}" unit=""
-								emphasized="true" state="None"/>
-							<Text text="{path: 'OPEN_PICK', type: 'sap.ui.model.type.Float', formatOptions: { maxFractionDigits: 2 }}" width="auto" maxLines="1"
-								wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
-							<Text text="{path: 'COMPLETION', type: 'sap.ui.model.type.Float', formatOptions: { maxFractionDigits: 2 }}" width="auto" maxLines="1"
-								wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+							<ObjectNumber number="{path: 'PCKD', type: 'sap.ui.model.type.Float', formatOptions: { maxFractionDigits: 2 }}" unit="" emphasized="true" state="None"/>
+							<ObjectNumber number="{path: 'OPEN', type: 'sap.ui.model.type.Float', formatOptions: { maxFractionDigits: 2 }}" unit="" emphasized="true" state="None"/>
+							<ObjectNumber number="{path: 'COMP', type: 'sap.ui.model.type.Float', formatOptions: { maxFractionDigits: 2 }}" unit="" emphasized="true" state="None"/>
 							<ObjectStatus text="{STATUS}" state="Warning" visible="true"/>
-							<Text text="{SHIPPING_PT}" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
+							<Text text="{SHIP_PT}" width="auto" maxLines="1" wrapping="false" textAlign="Begin" textDirection="Inherit" visible="true"/>
 						</cells>
 					</ColumnListItem>
 				</items>
