@@ -9,12 +9,16 @@
 						visibleMeasures="mea0" vizProperties="{staticDataModel>/pickChart/vizProperties}"
 						chartType="pie" selectionMode="Single" uiConfig="{}">
 						<chart:dimensions>
-							<data:Dimension name="__id" label="Country" role="category" textProperty="dim0"/>
+							<data:Dimension name="__id" label="Picked" role="category" textProperty="dim0"/>
 						</chart:dimensions>
 						<chart:measures>
 							<data:Measure name="mea0" label="Profit" role="axis2"/>
 						</chart:measures>
 					</chart:Chart>
+					<!--<chart:Chart id="packChart" width="640px" height="215px"-->
+					<!--	visibleDimensions="__id" visibleMeasures="mea0"-->
+					<!--	vizProperties="{staticDataModel>/packChart/vizProperties}"-->
+					<!--	chartType="pie" selectionMode="Single" uiConfig="{}">-->
 					<chart:Chart id="packChart" width="640px" height="215px"
 						visibleDimensions="__id" visibleMeasures="mea0"
 						vizProperties="{staticDataModel>/packChart/vizProperties}"

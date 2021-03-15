@@ -103,6 +103,15 @@ sap.ui.define(["sap/ui/core/mvc/Controller",
 		onInit: function () {
 			this.oRouter = sap.ui.core.UIComponent.getRouterFor(this);
 			this.oRouter.getTarget("Page1").attachDisplay(jQuery.proxy(this.handleRouteMatched, this));
+			
+			// var oDataModel = new ODataModel();
+			var oDataModel = new sap.ui.model.odata.v2.ODataModel("/sap/opu/odata/sap/ZWAREHOUSE_DASHBOARD_TEST_SRV/");
+			var url1 = "/sap/opu/odata/sap/ZWAREHOUSE_DASHBOARD_TEST_SRV/DeliveryDataSet";
+			oDataModel.read(url1, null, null, false, function (oData, oResponse) {
+				debugger;
+				// arr = oData;
+				// a1 = arr.results;
+			});
 
 			var oView = this.getView(),
 				oData = {},
